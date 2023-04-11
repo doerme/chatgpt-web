@@ -1,6 +1,8 @@
 # build front-end
 FROM node:lts-alpine AS frontend
 
+LABEL maintainer="doerme"
+
 RUN npm install pnpm -g
 
 WORKDIR /app
